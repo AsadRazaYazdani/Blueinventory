@@ -1,0 +1,25 @@
+/*===== FONTS =====*/
+@font-face {
+	font-family: Inter;
+	src: url("./fonts/Inter-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: PlusJakartaSans;
+	src: url("./fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: EvolventaBold;
+	src: url("./fonts/Evolventa-Bold-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: SFTSchriftedSansTRIALMedium;
+	src: url("./fonts/SFTSchriftedSansTRIAL-Medium-VariableFont_wght.ttf");
+}
+
+// Font Stack Properties
+$dashboard: "Inter", "EvolventaBold" sans-serif;
+$main: "EvolventaBold", sans-serif;
+$body: "PlusJakartaSans", "SFTSchriftedSansTRIALMedium", sans-serif;

@@ -1,0 +1,371 @@
+// Imports
+@import "../fonts";
+@import "../colors";
+
+.submitButton {
+	display: flex;
+	transition: 1s;
+	padding: 10px 20px;
+	align-items: center;
+	background: $darkBlue;
+	text-decoration: none;
+	justify-content: center;
+	transform: skewX(-15deg);
+	box-shadow: -3px 6px 0 $darkerBlue;
+
+	&:focus {
+		outline: none;
+		background: $darkBlue;
+	}
+
+	&:hover {
+		transition: 0.5s;
+		background: $darkBlue;
+		box-shadow: -10px 10px 0 $blue;
+
+		.span:nth-child(2) {
+			transition: 0.5s;
+			margin-right: 45px;
+		}
+
+		.three {
+			animation: submit_button_color_anim 1s infinite 0.2s;
+		}
+
+		.one {
+			transform: translateX(0%);
+			animation: submit_button_color_anim 1s infinite 0.6s;
+		}
+
+		.two {
+			transform: translateX(0%);
+			animation: submit_button_color_anim 1s infinite 0.4s;
+		}
+	}
+
+	.span:nth-child(2) {
+		transition: 0.5s;
+		margin-right: 0px;
+	}
+
+	.span {
+		transform: skewX(15deg);
+	}
+
+	.span:nth-child(2) {
+		width: 20px;
+		margin-left: 20px;
+		position: relative;
+		top: 5%;
+	}
+
+	/**************SVG****************/
+	.one {
+		transition: 0.4s;
+		transform: translateX(-60%);
+	}
+
+	.two {
+		transition: 0.5s;
+		transform: translateX(-30%);
+	}
+
+	/* SVG animations */
+	@keyframes submit_button_color_anim {
+		0% {
+			fill: $white;
+		}
+		50% {
+			fill: $blue;
+		}
+		100% {
+			fill: $white;
+		}
+	}
+}
+
+.messageSent {
+	display: flex;
+	transition: 0.5s;
+	padding: 10px 20px;
+	align-items: center;
+	background: $yellow;
+	text-decoration: none;
+	justify-content: center;
+	transform: skewX(-15deg);
+	box-shadow: -10px 10px 0 $goldPrimeDarker;
+
+	&:focus {
+		outline: none;
+		background: $goldPrimeDarker;
+	}
+
+	.span {
+		transform: skewX(15deg);
+	}
+
+	.span:nth-child(2) {
+		transition: 0.5s;
+		margin-right: 45px;
+		width: 20px;
+		margin-left: 20px;
+		position: relative;
+		top: 5%;
+	}
+
+	/**************SVG****************/
+	.three {
+		animation: message_sent_color_anim 1s infinite 0.2s;
+	}
+
+	.one {
+		transform: translateX(0%);
+		animation: message_sent_color_anim 1s infinite 0.6s;
+	}
+
+	.two {
+		transform: translateX(0%);
+		animation: message_sent_color_anim 1s infinite 0.4s;
+	}
+
+	/* SVG animations */
+	@keyframes message_sent_color_anim {
+		0% {
+			fill: $white;
+		}
+		50% {
+			fill: $yellow;
+		}
+		100% {
+			fill: $white;
+		}
+	}
+}
+
+.loginSubmitButton {
+	display: flex;
+	transition: 1s;
+	padding: 10px 20px;
+	width: fit-content;
+	align-items: center;
+	background: $darkBlue;
+	text-decoration: none;
+	justify-content: center;
+	transform: skewX(-15deg);
+	box-shadow: -3px 6px 0 $darkerBlue;
+
+	&:focus {
+		outline: none;
+		background: $darkBlue;
+	}
+
+	&:hover {
+		transition: 0.5s;
+		background: $darkBlue;
+		box-shadow: -10px 10px 0 $blue;
+
+		.span:nth-child(2) {
+			transition: 0.5s;
+			margin-right: 45px;
+		}
+
+		.three {
+			animation: login_submit_button_color_anim 1s infinite 0.2s;
+		}
+
+		.one {
+			transform: translateX(0%);
+			animation: login_submit_button_color_anim 1s infinite 0.6s;
+		}
+
+		.two {
+			transform: translateX(0%);
+			animation: login_submit_button_color_anim 1s infinite 0.4s;
+		}
+	}
+
+	.span:nth-child(2) {
+		transition: 0.5s;
+		margin-right: 0px;
+	}
+
+	.span {
+		transform: skewX(15deg);
+	}
+
+	.span:nth-child(2) {
+		width: 20px;
+		margin-left: 20px;
+		position: relative;
+		top: 5%;
+	}
+
+	/**************SVG****************/
+	.one {
+		transition: 0.4s;
+		transform: translateX(-60%);
+	}
+
+	.two {
+		transition: 0.5s;
+		transform: translateX(-30%);
+	}
+
+	/* SVG animations */
+	@keyframes login_submit_button_color_anim {
+		0% {
+			fill: $white;
+		}
+		50% {
+			fill: $blue;
+		}
+		100% {
+			fill: $white;
+		}
+	}
+}
+
+.loginSuccessfulButton {
+	display: flex;
+	transition: 0.5s;
+	padding: 10px 20px;
+	align-items: center;
+	background: $yellow;
+	text-decoration: none;
+	justify-content: center;
+	transform: skewX(-15deg);
+	box-shadow: -10px 10px 0 $goldPrimeDarker;
+
+	&:focus {
+		outline: none;
+		background: $goldPrimeDarker;
+	}
+
+	.span {
+		transform: skewX(15deg);
+	}
+
+	.span:nth-child(2) {
+		transition: 0.5s;
+		margin-right: 45px;
+		width: 20px;
+		margin-left: 20px;
+		position: relative;
+		top: 5%;
+	}
+
+	/**************SVG****************/
+	.three {
+		animation: login_successful_button_color_anim 1s infinite 0.2s;
+	}
+
+	.one {
+		transform: translateX(0%);
+		animation: login_successful_button_color_anim 1s infinite 0.6s;
+	}
+
+	.two {
+		transform: translateX(0%);
+		animation: login_successful_button_color_anim 1s infinite 0.4s;
+	}
+
+	/* SVG animations */
+	@keyframes login_successful_button_color_anim {
+		0% {
+			fill: $white;
+		}
+		50% {
+			fill: $pinkRed;
+		}
+		100% {
+			fill: $white;
+		}
+	}
+}
+
+.loginErrorButton {
+	display: flex;
+	transition: 0.5s;
+	padding: 10px 20px;
+	align-items: center;
+	background: $pinkRed;
+	text-decoration: none;
+	justify-content: center;
+	transform: skewX(-15deg);
+	box-shadow: -10px 10px 0 $darkPinkRed;
+
+	&:focus {
+		outline: none;
+		background: $darkPinkRed;
+	}
+
+	.span {
+		transform: skewX(15deg);
+	}
+
+	.span:nth-child(2) {
+		transition: 0.5s;
+		margin-right: 45px;
+		width: 20px;
+		margin-left: 20px;
+		position: relative;
+		top: 5%;
+	}
+
+	/**************SVG****************/
+	.three {
+		animation: login_error_button_color_anim 1s infinite 0.2s;
+	}
+
+	.one {
+		transform: translateX(0%);
+		animation: login_error_button_color_anim 1s infinite 0.6s;
+	}
+
+	.two {
+		transform: translateX(0%);
+		animation: login_error_button_color_anim 1s infinite 0.4s;
+	}
+
+	/* SVG animations */
+	@keyframes login_error_button_color_anim {
+		0% {
+			fill: $white;
+		}
+		50% {
+			fill: $pinkRed;
+		}
+		100% {
+			fill: $white;
+		}
+	}
+}
+
+// Dashboard
+.createItem {
+	@apply placeholder-blue;
+
+	p {
+		@apply text-tiny;
+	}
+
+	form {
+		label {
+			font-family: $body;
+			@apply text-base font-semibold text-darkBlue;
+		}
+
+		input,
+		textarea {
+			@apply px-4 py-2 text-tiny w-full lg:w-fit lg:min-w-[13rem] text-darkBlue bg-white bg-opacity-50 outline-none rounded-lg border-[1px] border-darkGrey active:border-darkBlue focus:border-darkBlue focus:ring-[1px] focus:ring-darkBlue;
+		}
+
+		textarea {
+			@apply w-full;
+		}
+
+		// ::placeholder {
+		// 	@apply text-tiny font-normal;
+		// }
+	}
+}

@@ -1,0 +1,118 @@
+// Imports
+@import "../fonts";
+@import "../_colors";
+
+.dashboard {
+	@apply flex flex-row min-h-screen bg-white;
+
+	* {
+		font-family: $body;
+	}
+}
+
+.topNavbar {
+	li {
+		@apply cursor-pointer px-0;
+	}
+
+	.logoutButton {
+		svg:hover {
+			fill: $pinkRed;
+
+			g,
+			path {
+				fill: $pinkRed;
+			}
+			line {
+				fill: $pinkRed;
+			}
+		}
+	}
+
+	// Google Translate Navigation SVG
+	.openGoogleTranslateSVG,
+	.closeGoogleTranslateSVG:hover {
+		fill: none;
+
+		g,
+		path {
+			fill: none;
+		}
+		line {
+			fill: none;
+		}
+	}
+
+	.googleTranslateElement {
+		@apply absolute top-[4px] left-[-335px];
+
+		#google_translate_element {
+			select {
+				border: none;
+				@apply py-[10px] px-[8px] border-none bg-[#e1e5e7] rounded-sm text-darkBlue;
+
+				option {
+					@apply text-darkBlue py-1;
+				}
+			}
+
+			.goog-te-gadget {
+				@apply relative;
+			}
+
+			.goog-te-gadget .goog-te-combo {
+				border: none;
+				color: $darkBlue !important;
+				@apply my-0 absolute 2xl:top-[-8px] 2xl:left-0 xl:top-[40px] xl:left-[-125px];
+
+				p {
+					@apply hidden;
+				}
+			}
+
+			.goog-te-gadget {
+				color: $white !important;
+			}
+
+			.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+				display: none !important;
+			}
+		}
+	}
+}
+
+.mainNavigation {
+	@apply w-1/6 px-4 py-3 xl:py-5 bg-cover bg-no-repeat bg-center overflow-x-hidden overflow-y-auto;
+
+	.navLinks {
+		li {
+			@apply cursor-pointer rounded-sm py-2;
+
+			span {
+				@apply text-tiny;
+			}
+		}
+
+		li:hover {
+			@apply transition-all duration-200 ease-in-out;
+
+			svg {
+				@apply text-goldPrime transition-all ease-in-out duration-200;
+			}
+		}
+
+		.mediaSVG:hover {
+			fill: none;
+
+			path {
+				fill: none;
+			}
+		}
+	}
+}
+
+.tables {
+	::-webkit-scrollbar {
+		display: none;
+	}
+}

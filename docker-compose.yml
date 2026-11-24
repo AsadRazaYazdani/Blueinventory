@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: blueinventory
+      POSTGRES_USER: blueinventory
+      POSTGRES_PASSWORD: blueinventory
+    ports:
+      - "5432:5432"
+    volumes:
+      - blueinventory_pg:/var/lib/postgresql/data
+
+volumes:
+  blueinventory_pg:
